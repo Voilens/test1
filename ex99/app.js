@@ -2,9 +2,9 @@ require('dotenv').config()
 
 const express = require('express')
 const app = express()
-const articles = [{title: 'Example'}] // пока что имитация базы данных. В данном массиве будут храниться статьи ввиде объектов
+const articles = [{title: 'Example 1'}, {title: 'Example 2'}, {title: 'Example 3'}] // пока что имитация базы данных. В данном массиве будут храниться статьи ввиде объектов
 
-app.set(process.env.PORT || 3001) // port
+app.set('port', process.env.PORT || 3001) // port
 
 app.get('/articles', (req, res, next) => {
     res.send(articles)

@@ -13,10 +13,3 @@ app.listen(port, () => {
     console.log(`Web app available at http://127.0.0.1:${port}`)
 })
 
-/*
-маршруты приложения со статьями 
-POST/articles
-GET/articles/:id
-GET/articles
-DELETE/articles/:id
-*/
